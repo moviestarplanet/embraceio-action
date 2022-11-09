@@ -33,8 +33,6 @@ jobs:
         run: embrace-upload --app ${{ secrets.EMBRACE_APP_KEY }} --token ${{ secrets.EMBRACE_API_KEY }} --dsym ${{ env.DSYM_PATH }} --log-level debug
 ```
 
-WARNING: Dont enable --debug mode in Github Action as it may leak information.
-
 ## License
 
 MIT. See `LICENSE` for more details.
