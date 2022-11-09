@@ -1,0 +1,15 @@
+# https://help.github.com/en/articles/metadata-syntax-for-github-actions
+name: 'EmbraceIO Update'
+description: 'Install a specific EmbraceIO version'
+author: 'Moviestarplanet'
+branding:
+  icon: 'fast-forward'
+  color: 'purple'
+inputs:
+  version:
+    description: 'Specify EmbraceIO version to use. Accepted values are any EmbraceIO version'
+    required: false
+    default: "5.12.2"
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
